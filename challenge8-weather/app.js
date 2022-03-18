@@ -13,14 +13,13 @@ console.log(today);
 
 let dateIndex;
 
-function getDateIndex() {
+(function getDateIndex() {
   for (let i = 0; i < 7; i++) {
     if (daysOfWeekMap[i] === today) {
       dateIndex = i;
     }
   }
-}
-getDateIndex();
+})();
 
 const iconNameToSizeMap = {
   cloudy: { width: 264, height: 166 },
